@@ -8,11 +8,13 @@ diffutils
 docbook
 docbook-xsl
 findutils
+ffmpeg
 freetype
 fzf
 gawk
 gdbm
 gettext
+geoip
 ghostscript
 git
 git-lfs
@@ -59,6 +61,7 @@ libxml2
 libxmlsec1
 libyaml
 little-cms2
+links
 lua
 lynx
 lz4
@@ -68,6 +71,7 @@ mpfr
 ncurses
 neofetch
 nettle
+nmap
 node
 node@12
 nspr
@@ -89,8 +93,10 @@ python@3.8
 readline
 rsync
 ruby
+screen
 screenresolution
 shared-mime-info
+speedtest-cli
 sqlite
 sslscan
 stoken
