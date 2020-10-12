@@ -41,7 +41,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history time battery 
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 ## time config
-POWERLEVEL9K_TIME_FORMAT="%D{%I:%M:%S}"
+POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S}"
 POWERLEVEL9K_TIME_12HR=false
 
 ## git config (remove extra space from branch icon)
