@@ -1,3 +1,4 @@
+source ~/.proxyrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -40,7 +41,8 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history time battery 
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 ## time config
-POWERLEVEL9K_TIME_FORMAT="%D{%I:%M:%S %p}"
+POWERLEVEL9K_TIME_FORMAT="%D{%I:%M:%S}"
+POWERLEVEL9K_TIME_12HR=false
 
 ## git config (remove extra space from branch icon)
 POWERLEVEL9K_VCS_BRANCH_ICON=$'\uF126'
