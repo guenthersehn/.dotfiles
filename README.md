@@ -124,11 +124,15 @@ Run `vim` to install plugins:
 vim +PluginInstall +qall
 ```
 
-# 9. Launch a new terminal
+# 9. Optional 
+
+Install pfetch for pretty system info when you login. https://github.com/dylanaraps/pfetch
+
+# 10. Launch a new terminal
 
 It should look like the screenshot above
 
-# 10. Customize
+# 11. Customize
 
 The [`.zshrc`](zshrc) config sources files named `*.sh` in each of the following directories after setting everything else:
 
@@ -138,7 +142,7 @@ The [`.zshrc`](zshrc) config sources files named `*.sh` in each of the following
 
 Files in each of these directories are run in alphabetic order (using `sort` on filenames)
 
-# 11. Updates
+# 12. Updates
 
 Update everything by running the following commands:
 
