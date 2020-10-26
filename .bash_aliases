@@ -40,6 +40,7 @@ alias gbd="git push origin --delete"
 alias ws="cd ~/dev/workspaces"
 alias dev="cd ~/dev"
 alias dot="cd ~/.dotfiles"
+alias h="cd ~"
 
 # docker
 alias d="docker"
@@ -63,5 +64,3 @@ alias rm-icon='sudo find . -name "Icon?" -exec rm -f "{}" \;'
 alias find-icon='sudo find . -name "Icon?"'
 alias script-template='vim ~/gd/linux/bin/script_template.txt'
 #alias info='code ~/gd/poc/info.md'
-
-alias h="cd ~"
