@@ -36,7 +36,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ## left/right status segments
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_proxy_icon root_indicator dir_writable dir vcs kubecontext newline context)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context custom_proxy_icon root_indicator dir_writable dir  vcs kubecontext newline prompt_char)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history time battery custom_charging_icon)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
@@ -45,7 +45,7 @@ POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S}"
 POWERLEVEL9K_TIME_12HR=false
 
 ## git config (remove extra space from branch icon)
-POWERLEVEL9K_VCS_BRANCH_ICON=$'\uF126'
+# POWERLEVEL9K_VCS_BRANCH_ICON=$'\uF126'
 
 ## dir config
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='deepskyblue1'
@@ -190,3 +190,5 @@ done
 ## EOF
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.dotfiles/.bashrc ] && source ~/.dotfiles/.bashrc
