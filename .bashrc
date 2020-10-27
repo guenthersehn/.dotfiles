@@ -30,18 +30,6 @@ export PATH=${PATH}:${M2_HOME}/bin
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
-
-# PROXY
-BASE_EU_PROXY="http://proxy-eu.org.nasdaqomx.com:8080/"
-BASE_NO_PROXY=".local,localhost,127.0.0.1,localaddress,*localdomain.com,localdomain.com,*nasdaq.com,nasdaq.com,*nasdaqomx.com,nasdaqomx.com,*ften.com,ften.com,*om.com,om.com,*.om,.om,nasdaqtrader.com,*nasdaqtrader.com"
-  
-export HTTP_PROXY=$BASE_EU_PROXY
-export HTTPS_PROXY=$BASE_EU_PROXY
-export NO_PROXY=$BASE_NO_PROXY
-export http_proxy=$BASE_EU_PROXY
-export https_proxy=$BASE_EU_PROXY
-export no_proxy=$BASE_NO_PROXY
-export ftp_proxy=$BASE_EU_PROXY
-export socks_proxy=$BASE_EU_PROXY
+export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
 echo "- ~/.bashrc APPLIED"

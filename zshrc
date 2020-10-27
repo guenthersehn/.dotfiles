@@ -1,4 +1,3 @@
-source ~/.proxyrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -192,3 +191,5 @@ done
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ~/.dotfiles/.bashrc ] && source ~/.dotfiles/.bashrc
+
+[ -f ~/.proxyrc ] && source ~/.proxyrc
