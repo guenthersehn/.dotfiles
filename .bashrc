@@ -30,6 +30,5 @@ export PATH=${PATH}:${M2_HOME}/bin
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
 echo "- ~/.bashrc APPLIED"
