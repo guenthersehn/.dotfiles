@@ -29,6 +29,11 @@ export PATH=${PATH}:${M2_HOME}/bin
 [ -d $M2_HOME ] && echo "- Directory $M2_HOME exists." || echo "- Error: Directory $M2_HOME does not exists."
 
 # PATH
+# export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
+
+[ -f ~/.proxyrc ] && source ~/.proxyrc
+[ -f ~/.varsrc ] && source ~/.varsrc
+[ -f ~/.pathrc ] && source ~/.pathrc
 
 echo "- ~/.bashrc APPLIED"
