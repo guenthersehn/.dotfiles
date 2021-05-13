@@ -31,6 +31,7 @@ export PATH=${PATH}:${M2_HOME}/bin
 # PATH
 # export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
+export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH 
 
 [ -f ~/.proxyrc ] && source ~/.proxyrc
 [ -f ~/.varsrc ] && source ~/.varsrc

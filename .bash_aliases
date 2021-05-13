@@ -1,7 +1,7 @@
 # ls
-alias ll="ls --color=auto -laAhHF"
-alias ls="ls --color=auto -a"
-alias la="ls --color=auto -A"
+alias ll="ls -GlaAhHF"
+alias ls="ls -Ga"
+alias la="ls -GA"
 
 # general
 alias aliases="vim ~/.dotfiles/.bash_aliases && source ~/.dotfiles/.bash_aliases && cp -f ~/.dotfiles/.bash_aliases ~/.dotfiles/backup/$(hostname)_$(date +"%Y-%m-%d_%Hh%M").bash_aliases"
