@@ -23,7 +23,7 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Maven
-export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
+export M2_HOME=/usr/local/Cellar/maven/3.8.3/libexec
 export M2=${M2_HOME}/bin
 export PATH=${PATH}:${M2_HOME}/bin
 [ -d $M2_HOME ] && echo "- Directory $M2_HOME exists." || echo "- Error: Directory $M2_HOME does not exists."
@@ -31,7 +31,6 @@ export PATH=${PATH}:${M2_HOME}/bin
 # PATH
 # export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
-export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH 
 
 [ -f ~/.proxyrc ] && source ~/.proxyrc
 [ -f ~/.varsrc ] && source ~/.varsrc
