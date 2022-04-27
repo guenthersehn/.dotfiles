@@ -6,6 +6,7 @@ alias la="ls -GA --color=always"
 # general
 alias aliases="vim ~/.dotfiles/.bash_aliases && source ~/.dotfiles/.bash_aliases && cp -f ~/.dotfiles/.bash_aliases ~/.dotfiles/backup/$(hostname)_$(date +"%Y-%m-%d_%Hh%M").bash_aliases"
 alias bashrc="vim ~/.dotfiles/.bashrc && source ~/.dotfiles/.bashrc && cp -f ~/.dotfiles/.bashrc ~/.dotfiles/backup/$(hostname)_$(date +"%Y-%m-%d_%Hh%M").bashrc"
+alias proxy="vim ~/.proxyrc && source ~/.proxyrc && echo $BASE_EU_PROXY"
 alias code="code-insiders"
 alias c="clear"
 alias vimrc="vim ~/.vimrc"

@@ -1,5 +1,5 @@
 # Make ls use colors
-#export CLICOLOR=1
+export CLICOLOR=1
 
 HISTCONTROL=ignoredups:ignorespace
 
@@ -10,12 +10,6 @@ HISTFILESIZE=200000000
 #PS1="${debian_chroot:+($debian_chroot)}${C_LIGHTGREEN}\u $C_LIGHTBLUE\w$C_LIGHTYELLOW \$(git-prompt) \n$C_DEFAULT> "
 #PS1="\[\033[01;32m\]\u \w \$ \n> "
 #PS1="%B%F{green}%n%F{magenta} @ %f%b%B%F{cyan}%~/%f%b %B%F{yellow}>%f%b "
-
-# Aliases
-if [ -f ~/.dotfiles/.bash_aliases ]; then
-    echo "- Calling ~/.dotfiles/.bash_aliases"
-    . ~/.dotfiles/.bash_aliases
-fi
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"
@@ -32,8 +26,11 @@ export PATH=${PATH}:${M2_HOME}/bin
 # export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
 
-[ -f ~/.proxyrc ] && source ~/.proxyrc
-[ -f ~/.varsrc ] && source ~/.varsrc
-[ -f ~/.pathrc ] && source ~/.pathrc
+[ -f ~/.dotfiles/.bash_aliases ] && source ~/.dotfiles/.bash_aliases && echo "- ~/.dotfiles/.bash_aliases APPLIED"
+[ -f ~/.proxyrc ] && source ~/.proxyrc && echo "- ~/.proxyrc APPLIED"
+[ -f ~/.varsrc ] && source ~/.varsrc && echo "- ~/.varsrc APPLIED"
+[ -f ~/.pathrc ] && source ~/.pathrc && echo "- ~/.pathrc APPLIED"
 
 echo "- ~/.bashrc APPLIED"
+
+archey

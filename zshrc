@@ -89,7 +89,7 @@ plugins=(
 	node
 	npm
 	nvm
-	osx
+	macos
 	rsync
 )
 
