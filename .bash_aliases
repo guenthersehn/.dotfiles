@@ -40,6 +40,7 @@ alias gbd="git push origin --delete"
 
 # Folders
 alias ws="cd ~/dev/workspaces"
+alias l="cd ~/dev/learning/"
 alias dev="cd ~/dev"
 alias dot="cd ~/.dotfiles"
 alias h="cd ~"
