@@ -34,8 +34,8 @@ alias gcom="git checkout master"
 alias gcod="git checkout develop"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative"
 alias gb="git branch"
-alias gbp="git remote origin --prune"
-alias gbpd="git remote origin --prune --dry-run"
+alias gbp="git remote prune origin"
+alias gbpd="git remote prune --dry-run origin"
 alias gbd="git push origin --delete"
 
 # Folders
