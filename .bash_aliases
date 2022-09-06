@@ -17,6 +17,7 @@ alias zshrc="vim ~/.zshrc && source ~/.zshrc"
 alias oh="cd ~/.oh-my-zsh"
 alias pbcopy_id_rsa="pbcopy < ~/.ssh/id_rsa.pub"
 #alias colors="for i in {0..255}; do print -Pn '%K{$i}  %k%F{$i}${(l:3::0:)i}%f ' ${${(M)$((i%6)):#3}:+$'\n'}; done"
+alias launchpad="~/.dotfiles/scripts/launchpad.sh"
 
 # git
 alias gf="git fetch"
