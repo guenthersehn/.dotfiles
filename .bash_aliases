@@ -67,4 +67,8 @@ alias find-node_modules='sudo find . -name "node_modules" -type d'
 alias rm-icon='sudo find . -name "Icon?" -exec rm -f "{}" \;'
 alias find-icon='sudo find . -name "Icon?"'
 alias script-template='vim ~/gd/linux/bin/script_template.txt'
-#alias info='code ~/gd/poc/info.md'
+alias info='code ~/.dotfiles/stuff/info.md'
+alias text="code ~/.dotfiles/stuff/Text\ Substitutions.plist"
+
+# kubernetes
+alias k="kubectl"

@@ -34,6 +34,10 @@ icu4c
 ilmbase
 imagemagick
 jenv
+openjdk@8
+openjdk@11
+openjdk@17
+openjdk@19
 jpeg
 jq
 k9s
