@@ -23,17 +23,28 @@ export M2=${M2_HOME}/bin
 export PATH=${PATH}:${M2_HOME}/bin
 #[ -d $M2_HOME ] && echo "- Directory $M2_HOME exists." || echo "- Error: Directory $M2_HOME does not exists."
 
-# PATH
+# PATH & VARS
 # export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
 export PATH="~/.dotfiles/scripts:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
+export PATH="$(pyenv root)/shims:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+export AMT_ROOT=/opt/appmind
+export APPMIND_HOME=/opt/appmind
+
 [ -f ~/.dotfiles/.bash_aliases ] && source ~/.dotfiles/.bash_aliases && echo "✅ ~/.dotfiles/.bash_aliases"
 [ -f ~/.proxyrc ] && source ~/.proxyrc && echo "✅ ~/.proxyrc"
-[ -f ~/.varsrc ] && source ~/.varsrc && echo "✅ ~/.varsrc"
-[ -f ~/.pathrc ] && source ~/.pathrc && echo "✅ ~/.pathrc"
 
 echo "✅ ~/.bashrc APPLIED"
 echo
