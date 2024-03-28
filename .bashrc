@@ -27,8 +27,8 @@ export PATH=${PATH}:${M2_HOME}/bin
 # export PATH="dir:$PATH""
 export PATH="/usr/local/bin:$PATH"
 export PATH="~/.dotfiles/scripts:$PATH"
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+#export SDKMAN_DIR="$HOME/.sdkman"
+#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -38,7 +38,8 @@ export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 export PATH="$(pyenv root)/shims:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# WARNING: jenv init makes the terminal pretty slow
+#eval "$(jenv init -)"
 
 export AMT_ROOT=/opt/appmind
 export APPMIND_HOME=/opt/appmind
@@ -48,5 +49,3 @@ export APPMIND_HOME=/opt/appmind
 
 echo "✅ ~/.bashrc APPLIED"
 echo
-
-# archey -o
