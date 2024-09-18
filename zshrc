@@ -1,47 +1,68 @@
+## ZSHRC
+
+## figure out where brew is installed
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  export BREW_HOME=$( /opt/homebrew/bin/brew --prefix )
+elif [[ -x /usr/local/bin/brew ]]; then
+  export BREW_HOME=$( /usr/local/bin/brew --prefix )
+elif [[ -x $HOME/.homebrew/bin/brew ]]; then
+  export BREW_HOME=$( $HOME/.homebrew/bin/brew --prefix )
+elif [[ -x $HOME/homebrew/bin/brew ]]; then
+  export BREW_HOME=$( $HOME/homebrew/bin/brew --prefix )
+else
+  echo ""
+  echo "Unable to figure out where brew is installed! Fix in ~/.zshrc"
+  echo ""
+fi
+
+## add brew's bin and sbin if it's not in /usr/local
+if [[ $BREW_HOME != "/usr/local" ]]; then
+  export PATH="${BREW_HOME}/bin:${BREW_HOME}/sbin:${PATH}"
+fi
+
+## add various brew "non-g" binaries to the head of the path
+for bindir in $( find $BREW_HOME -type d -name gnubin ); do
+  export PATH="$bindir:${PATH}"
+done
+
+## add /usr/local/bin and sbin
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# man page paths
+export MANPATH="/usr/local/share/man:$MANPATH"
+if [[ $BREW_HOME != "/usr/local" ]]; then
+  export MANPATH="$BREW_HOME/share/man:$MANPATH"
+fi
+
+## update path completions paths before oh-my-zsh inits
+fpath=(
+  $BREW_HOME/opt/zsh-completions
+  $BREW_HOME/share/zsh/site-functions
+	$fpath
+)
+
 # [[ ! -f .zshrc_simple ]] || source .zshrc_simple
 # [[ ! -f .zshrc_complex ]] || source .zshrc_complex
 
 ### Shows nice Mac logo along with some information
 archey -o
 
-### Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-### Initialization code that may require console input (password prompts, [y/n]
-### confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-### Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-### Update completions paths before oh-my-zsh inits
-fpath=(
-  /usr/local/share/zsh/site-functions
-  /usr/local/share/zsh-completions
-  $fpath
-)
-
-##### ### Add various brew "non-g" binaries to the head of the path
-##### for lib in $( ls -1 /usr/local/opt ); do
-#####   export PATH="/usr/local/opt/$lib/libexec/gnubin:$PATH"
-##### done
-##### export PATH="/usr/local/bin:$PATH"
-
-### Man page paths
-export MANPATH="/usr/local/share/man:$MANPATH"
-
-
-##############################
-############ THEME ###########
-##############################
-
-### Use PowerLevel10k theme
+###############################################################################
+## Use PowerLevel10k theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-### Use "Nerd Font" -- install FiraCode (explicitly not the 'mono' version)
-### from https://nerdfonts.com/
-### $ brew tap homebrew/cask-fonts
-### $ brew cask install font-firacode-nerd-font
+## view colors
+# getColorCode background
+# getColorCode foreground
+
+## Use "Nerd Font" -- install FiraCode (explicitly not the 'mono' version)
+# from https://nerdfonts.com/
+# $ brew tap homebrew/cask-fonts
+# $ brew cask install font-firacode-nerd-font
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ## ### Prompt

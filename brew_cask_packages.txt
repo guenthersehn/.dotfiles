@@ -1,5 +1,0 @@
-iterm2
-caffeine
-wireshark 
-cakebrew
-virtualbox
