@@ -20,6 +20,10 @@ alias pbcopy_id_rsa="pbcopy < ~/.ssh/id_rsa.pub"
 #alias colors="for i in {0..255}; do print -Pn '%K{$i}  %k%F{$i}${(l:3::0:)i}%f ' ${${(M)$((i%6)):#3}:+$'\n'}; done"
 alias launchpad="~/.dotfiles/scripts/launchpad.sh"
 
+# freespace
+alias free="df -h"
+alias freed="du -h -s *"
+
 # git
 alias gf="git fetch"
 alias gh="alias | grep git"
