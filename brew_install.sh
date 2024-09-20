@@ -9,6 +9,6 @@ $(brew --prefix)/opt/fzf/install --no-update-rc --no-bash --all
 
 ## install some nice fonts
 #brew tap homebrew/cask-fonts
-#brew cask install font-firacode-nerd-font
-#brew cask install font-meslo-lg-nerd-font
+brew install --cask font-fira-code-nerd-font
+brew install --cask font-meslo-lg-nerd-font
 
