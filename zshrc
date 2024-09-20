@@ -160,7 +160,7 @@ export EDITOR=vim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.dotfiles/.bashrc ] && source ~/.dotfiles/.bashrc
-[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
+[ -f ~/.dotfiles/.p10k.zsh ] && source ~/.dotfiles/.p10k.zsh
 
 ##### # To customize prompt, run `p10k configure` or edit /tmp/p10k.zsh.
 ##### [[ ! -f /tmp/p10k.zsh ]] || source /tmp/p10k.zsh
