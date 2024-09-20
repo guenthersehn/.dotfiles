@@ -46,7 +46,7 @@ fpath=(
 # [[ ! -f .zshrc_complex ]] || source .zshrc_complex
 
 ### Shows nice Mac logo along with some information
-archey -o
+archey -l retro
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -123,7 +123,7 @@ plugins=()
 #plugins=(git mvn node npm nvm macos rsync)
 
 ### Syntax hilighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### run oh-my-zsh
 echo ZSH_THEME=$ZSH_THEME

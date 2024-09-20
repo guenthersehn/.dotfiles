@@ -1,10 +1,12 @@
 bash
 bash-completion
 fzf
+archey4
 git
 grep
 gzip
 less
+pyenv
 vim
 wget
 zsh
