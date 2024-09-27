@@ -11,8 +11,6 @@ HISTFILESIZE=200000000
 ### PS1="\[\033[01;32m\]\u \w \$ \n> "
 ### PS1="%B%F{green}%n%F{magenta} @ %f%b%B%F{cyan}%~/%f%b %B%F{yellow}>%f%b "
 
-# Java
-
 # Maven
 #export M2_HOME=/usr/local/Cellar/maven/3.8.6/libexec
 #export M2=${M2_HOME}/bin
@@ -24,26 +22,12 @@ HISTFILESIZE=200000000
 export PATH="/usr/local/bin:$PATH"
 export PATH="~/.dotfiles/scripts:$PATH"
 
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH="$(pyenv root)/shims:$PATH"
 
-#export PATH="$HOME/.jenv/bin:$PATH"
-#export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
-
-#####################################################################################
-## WARNING: jenv init makes the terminal pretty slow
-#####################################################################################
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"
-# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-# export PATH="$JAVA_HOME/bin:$PATH"
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
-####################################################
-
-[ -f ~/.dotfiles/.bash_aliases ] && source ~/.dotfiles/.bash_aliases && echo "✅ ~/.dotfiles/.bash_aliases"
-[ -f ~/.proxyrc ] && source ~/.proxyrc && echo "✅ ~/.proxyrc"
-
-echo "✅ ~/.bashrc APPLIED"
-echo
+[ -f ~/.dotfiles/.bash_aliases ] && source ~/.dotfiles/.bash_aliases && echo "                            ✅ ~/.dotfiles/.bash_aliases"
+[ -f ~/.proxyrc ] && source ~/.proxyrc && echo "                            ✅ ~/.proxyrc"
+echo "                            ✅ ~/.bashrc APPLIED"

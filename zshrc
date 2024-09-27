@@ -59,7 +59,6 @@ plugins=()
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### run oh-my-zsh
-echo ZSH_THEME=$ZSH_THEME
 source $ZSH/oh-my-zsh.sh
 
 ## use vim
@@ -73,3 +72,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.dotfiles/.bashrc ] && source ~/.dotfiles/.bashrc
 [ -f ~/.dotfiles/.p10k.zsh ] && source ~/.dotfiles/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+TEST=`sdk current java | tr -d '\n'`
+echo "                            ✅ $TEST"
+
+
+
+

@@ -86,8 +86,6 @@ Plugin 'dense-analysis/ale'
 " https://github.com/pedrohdz/vim-yaml-folds
 Plugin 'pedrohdz/vim-yaml-folds'
 
-
-
 " dark theme
 " https://github.com/rakr/vim-two-firewatch
 " enable with:
