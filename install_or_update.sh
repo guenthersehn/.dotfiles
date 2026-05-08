@@ -8,8 +8,8 @@ VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 mkdir -p "$CONFIG_DIR"
 
 # Load URLs from local files
-BREW_INSTALL_URL=$(cat "$DOTFILES_DIR/brew.url")
-VUNDLE_REPO_URL=$(cat "$DOTFILES_DIR/vundle.url")
+BREW_INSTALL_URL=$(cat "$DOTFILES_DIR/config/brew.url")
+VUNDLE_REPO_URL=$(cat "$DOTFILES_DIR/config/vundle.url")
 
 SILENCE="/dev/null"
 [[ "$1" == "-v" ]] && SILENCE="/dev/stdout"
